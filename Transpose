@@ -1,0 +1,33 @@
+
+import java.util.Random;
+
+public class Transpose {
+       public static void main(String[] args) {
+            int[][] table = new int[5][5];
+      int[][] copyto = new int[5][5];
+    for(int f = 0; f<5; f++){
+        for(int r = 0; r<5; r++){
+       Random rand = new Random();
+
+    int randomNum = rand.nextInt((9 - 0) + 1) + 0;
+    table[f][r] = randomNum;
+    copyto[r][f] = randomNum;
+    System.out.print(table[f][r] + " ");
+    }
+        System.out.println();
+}
+        System.out.printf("%n");
+
+      
+    for(int f = 0; f<5; f++){
+        for(int r = 0; r<5; r++){
+        
+            
+            System.out.print(copyto[f][r]+" ");
+        }
+        System.out.println();
+    }
+        
+    }
+    
+}
